@@ -1,45 +1,37 @@
-package atividades1109;
+package abstrato;
 
 public class Principal {
 
 	public static void main(String[] args) {
-		Lobo lobo = new Lobo("Lobo mau", "Macho", "Lobo Vermelho");
-		lobo.dormir();
-		lobo.caminhar();
-		lobo.correr();
-		lobo.emitirSom();
-		
+		Carro ferrari = new Carro("00000", "F1", "Vermelho", 2023);
+		ferrari.ligar();
+		ferrari.acelerar();
+		ferrari.virar();
+		ferrari.frear();
+
 		System.out.println("--------------------");
 
-		Leao leao = new Leao("Zeke", "Macho", "Leão Branco");
-		leao.dormir();
-		leao.caminhar();
-		leao.correr();
-		leao.emitirSom();
-		
+		Onibus marcopolo = new Onibus("11111", "XB1", "Prata", 2020);
+		marcopolo.ligar();
+		marcopolo.acelerar();
+		marcopolo.virar();
+		marcopolo.frear();
+
 		System.out.println("--------------------");
-		
-		Tigre tigre = new Tigre("Tigrão", "Macho", "Tigre Bengala");
-		tigre.dormir();
-		tigre.caminhar();
-		tigre.correr();
-		tigre.emitirSom();
-		
+
+		Carro onix = new Carro("22222", "LT", "Prata", 2021);
+		onix.ligar();
+		onix.acelerar();
+		onix.virar();
+		onix.frear();
+
 		System.out.println("--------------------");
-		
-		Cachorro cachorro = new Cachorro("Dama", "Fêmea", "Cocker Spaniel");
-		cachorro.dormir();
-		cachorro.caminhar();
-		cachorro.correr();
-		cachorro.emitirSom();
-		
-		System.out.println("--------------------");
-		
-		Gato gato = new Gato("Tom", "Macho", "Azul Russo");
-		gato.dormir();
-		gato.caminhar();
-		gato.correr();
-		gato.emitirSom();
+
+		Moto honda = new Moto("33333", "NXR", "Preta", 2024);
+		honda.ligar();
+		honda.acelerar();
+		honda.virar();
+		honda.frear();
 	}
 
 }
